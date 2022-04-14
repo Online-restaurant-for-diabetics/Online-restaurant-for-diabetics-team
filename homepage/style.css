@@ -195,7 +195,69 @@ a.active {
   transition: all 0.5s;
 }
 /* ---------------------------------- Section About Us ----------------------------------*/
-
+.heading {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 2rem;
+}
+.about{
+  border-top:1px solid var(--gold);
+  border-bottom:1px solid var(--gold);
+}
+.heading span {
+  color: rgba(197, 157, 95, 1);
+  text-transform: uppercase;
+}
+.home {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+#About_us {
+  padding: 90px;
+  background: rgba(26, 24, 20, 1);
+  padding: 30px;
+}
+.home .content {
+  max-width: 60rem;
+}
+.about .row {
+  display: flex;
+  align-items: center;
+  background: rgba(54, 51, 44, 1);
+  flex-wrap: wrap;
+}
+.about .row .image {
+  flex: 1 1 20rem;
+}
+.about .row .image img {
+  width: 70%;
+  margin-left: 55px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  border-radius: 10% ;
+  border: 2px solid var(--gold);
+}
+.about .row .content {
+  flex: 1 1 45rem;
+  padding: 12px;
+}
+.about .row .content p {
+  font-size: 1.3rem;
+  color: rgb(255, 255, 255);
+  padding: 1rem 0;
+  line-height: 1.8;
+  text-align: center;
+}
+.para1 {
+  font-size: 30px;
+}
+.about .row .content h3 {
+  font-size: 1rem;
+  color: #fff;
+}
 /*---------------------------------------------ipad------------------------------------------------*/
 
 @media (min-width: 415px) and (max-width: 768px) {
@@ -255,6 +317,21 @@ a.active {
   .header {
     padding: 1.5rem 2rem;
   }
+.abot{
+  margin: 0px;
+}
+  .about .row .content p {
+    font-size: 2.3rem;
+    text-align: left;
+    margin-left: 40px;
+  }
+  .about .row .image img {
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 15%;
+  }
 }
 /*-----------------------------------lab--------------------------------*/
 @media (min-width: 821px){
@@ -262,7 +339,16 @@ a.active {
     font-size: 30px;
     padding-left: 30px;
   }
-  
+  .about .row .image {
+    flex: 1 1 5rem;
+  }
+  .about .row .image img {
+    width: 80%;
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 15%;
+  }
   .checkbtn {
     display: none;
   }
@@ -293,9 +379,48 @@ a.active {
   display: flex;
   align-items: center;
 }
-
+#About_us {
+  padding: 0px;
+  background: rgba(26, 24, 20, 1);
+  padding-bottom: 10px;
+}
 .home .content {
   max-width: 60rem;
 }
+.about .row {
+  display: flex;
+  align-items: center;
+  background: rgba(54, 51, 44, 1);
+  flex-wrap: wrap;
+}
+.about .row .image {
+  flex: 1 1 20rem;
+}
+.about .row .image img {
+  width: 70%;
+  margin-left: 55px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  border-radius: 10% ;   
+  border: 2px solid var(--gold);
 
+}
+.about .row .content {
+  flex: 1 1 45rem;
+  padding: 12px;
+}
+.about .row .content p {
+  font-size: 1.3rem;
+  color: rgb(255, 255, 255);
+  padding: 1rem 0;
+  line-height: 1.8;
+  text-align: center;
+}
+.para1 {
+  font-size: 30px;
+}
+.about .row .content h3 {
+  font-size: 1rem;
+  color: #fff;
+}
 }
