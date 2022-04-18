@@ -162,9 +162,9 @@ h4{
   color: #fff;
   transition: 0.5s;
 }
-.input-box select{
+.input-box label  {
   display: inline-block;
-  width: 50%;
+  width: 70%;
   padding: 12px;
   background-color: hsl(0, 0%, 96%);
   float: left;
@@ -180,6 +180,7 @@ h4{
   color: #fff;
   text-align: center;
 }
+
 button{
   width: 50%;
   margin-left: 125px;
