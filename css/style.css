@@ -321,6 +321,151 @@ section{
 
 }
 
+/* -------------------------------------------Alaa  Eid --------------------------*/
+
+.heading{
+    text-align: center;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color:#1a022589;
+    margin-bottom: 2rem ;
+    font-family: "MV Boli";
+    
+ }
+ 
+ 
+ .btn,
+ .option-btn,
+ .delete-btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    background-color:#65267eb6;
+    color:var(--white);
+    font-size: 2.5rem;
+    font-family: "Rockwell";
+ 
+ 
+    padding:1.2rem 3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+ }
+ 
+ .btn:hover,
+ .option-btn:hover,
+ .delete-btn:hover{
+    background-color:#65267eb6;
+ }
+ 
+ .option-btn i,
+ .delete-btn i{
+    padding-right: .5rem;
+ }
+ 
+ .option-btn{
+    background-color: #08080862;;
+ }
+ .update-btn{
+    margin-top: 0;
+    background-color:rgb(48, 4, 48);
+ }
+ 
+ .delete-btn{
+    margin-top: 0;
+    background-color:#08080862;
+ }
+ 
+ .display-product-table table{
+    width: 100%;
+    text-align: center;
+ }
+ 
+ .display-product-table table thead th{
+    padding:1.5rem;
+    font-size: 2rem;
+   
+    color:var(--white);
+ }
+ 
+ .display-product-table table td{
+    padding:1.5rem;
+    font-size: 2rem;
+    color:radial-gradient(rgba(147, 141, 153, 0.482), rgba(26, 27, 27, 0.592));
+ }
+ 
+ .display-product-table table td:first-child{
+    padding:0;
+ }
+ 
+ .display-product-table table tr:nth-child(even){
+    background-color: var(--bg-color);
+ }
+ 
+ 
+ .shopping-cart table{
+    text-align: center;
+    width: 100%;
+ 
+ }
+ 
+ .shopping-cart table thead th{
+    padding:1.5rem;
+    font-size: 2rem;
+    color:var(--white);
+    background: radial-gradient(rgba(184, 147, 223, 0.482), rgba(38, 38, 124, 0.592));
+ }
+ 
+ .shopping-cart table tr td{
+    border-bottom: var(--border);
+    padding:1.5rem;
+    font-size: 2rem;
+    color:var(--black);
+ }
+ 
+ .shopping-cart table input[type="number"]{
+    border: var(--border);
+    padding:1rem 2rem;
+    font-size: 2rem;
+    color:var(--black);
+    width: 10rem;
+ }
+ 
+ .shopping-cart table input[type="submit"]{
+    padding:.5rem 1.5rem;
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: rgb(142, 83, 142);
+    color:var(--white);
+ }
+ 
+ .shopping-cart table input[type="submit"]:hover{
+    background-color: rgb(100, 55, 100);
+ }
+ 
+ .shopping-cart table .table-bottom{
+    background: radial-gradient(rgba(184, 147, 223, 0.482), rgba(38, 38, 124, 0.592));
+ }
+ 
+ .shopping-cart .checkout-btn{
+    text-align: center;
+    margin-top: 1rem;
+ }
+ 
+ .shopping-cart .checkout-btn a{
+    display: inline-block;
+    width: auto;
+ }
+ 
+ .shopping-cart .checkout-btn a.disabled{
+    pointer-events: none;
+    opacity: .5;
+    user-select: none;
+    background-color: rgb(100, 55, 100);
+ }
+ 
+
 
 
 
