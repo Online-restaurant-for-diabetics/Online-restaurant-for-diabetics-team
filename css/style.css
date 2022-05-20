@@ -171,6 +171,156 @@ html{
 }
 
 
+/* rama almadhoon */
+
+
+:root{
+   --blue:#2980b9;
+   --red:tomato;
+   --orange:orange;
+   --black:#333;
+   --white:#fff;
+   --bg-color:#eee;
+   --dark-bg:rgba(0,0,0,.7);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+   --border:.1rem solid #999;
+}
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   text-transform: capitalize;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+.container{
+   max-width: 1200px;
+   margin:0 auto;
+   /* padding-bottom: 5rem; */
+}
+
+section{
+   padding:2rem;
+}
+
+
+/* العنوان فوق المنيو */
+.heading{
+   text-align: center;
+   font-size: 5rem;
+   text-transform: uppercase;
+   color:#1a022589;
+   margin-bottom: 2rem ;
+   font-family: "MV Boli";
+   
+}
+
+
+/*  add to cart الزر في المنيو */
+.btn,
+.option-btn,
+.delete-btn{
+   display: block;
+   width: 100%;
+   text-align: center;
+
+/*****************************************rrrrr*/
+   background-color:#08080862;
+   color:var(--white);
+   font-size: 2.5rem;
+   font-family: "Rockwell";
+
+
+   padding:1.2rem 3rem;
+   border-radius: 1rem;
+   cursor: pointer;
+   margin-top: 1rem;
+}
+
+/*******************************************rrr*/
+.btn:hover,
+.option-btn:hover,
+.delete-btn:hover{
+   background-color:rgb(142, 83, 142);
+}
+
+
+
+/* الصفحة كاملة الي شاملة تقسيم اعمدة الوجبات */
+.products .box-container{
+   display:grid;
+   grid-template-columns: repeat(3, 35rem);
+   gap:15rem;
+   justify-content: center;
+   margin-right: 90px;
+}
+
+
+/* الصندوق الي شامل الصورة والاسم والسعر */
+.products .box-container .box{
+   /*align-self:center;*/
+   text-align: center;
+   padding:30px;
+   width:fit-content ;
+   height: 500px ;
+
+   box-shadow: var(--box-shadow);
+   border:var(--border);
+   border-radius: 4rem;
+   background: radial-gradient(rgba(150, 96, 207, 0.482), rgba(86, 138, 216, 0.592));
+
+   /*: radial-gradient(rgb(169, 79, 173), rgb(85, 136, 213));*/
+   
+}
+
+
+/*صورة الوجبة */
+.products .box-container .box img{
+   height: 25rem;
+   border-radius: 2rem;
+}
+
+
+/* اسم الوجبة الي تحت الصورة */
+.products .box-container .box h3{
+   margin:1rem 0;
+   font-size: 3rem;
+   color:var(--black);
+   font-family: "MV Boli";
+   /*background-color: lightblue;*/
+
+}
+
+.products .box-container .box .price{
+   font-size: 3rem;
+   font-family: "Book Antiqua";
+   color:var(--black);
+}
+
+
+@media (max-width:450px){
+
+   html{
+      font-size: 50%;
+   }
+
+   .heading{
+      font-size: 3rem;
+   }
+
+   .products .box-container{
+      grid-template-columns: 1fr;
+   }
+
+}
+
 
 
 
