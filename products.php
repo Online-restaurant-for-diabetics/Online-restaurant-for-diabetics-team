@@ -67,7 +67,7 @@ if(isset($message)){
 
       <form action="" method="post">
          <div class="box">
-            <img src="uploaded_img/<?php echo $fetch_product['image']; ?>" alt="">
+            <img src="images/" alt="">
             <h3><?php echo $fetch_product['name']; ?></h3>
             <div class="price"> <?php echo $fetch_product['price']; ?> $</div>
             <input type="hidden" name="product_name" value="<?php echo $fetch_product['name']; ?>">

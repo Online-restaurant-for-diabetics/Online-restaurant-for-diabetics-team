@@ -1,6 +1,15 @@
 <?php
 
 @include 'config.php';
+if(isset($_GET['delete_all'])){
+   mysqli_query($conn, "DELETE FROM `cart`");
+   header('location:cart.php');
+}
+
+?>
+<?php
+
+@include 'config.php';
 
 if(isset($_POST['order_btn'])){
 
@@ -45,7 +54,7 @@ if(isset($_POST['order_btn'])){
             <p> your payment mode : <span>".$method."</span> </p>
             <p>(*pay when product arrives*)</p>
          </div>
-            <a href='products.php' class='btn'>continue shopping</a>
+         <a href='cart.php?delete_all'onclick=' return confirm('are you sure you want to delete all?');' class='delete-btn'> </i> Confirm </a>
          </div>
       </div>
       ";
