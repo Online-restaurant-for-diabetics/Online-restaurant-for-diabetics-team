@@ -79,7 +79,7 @@
       <p> Bash@Bash Restaurant.com </p>
     </div>
   </div>
-
+<!-- home -->
   <div class="footer-right col-md-4">
     <p class="footer-company-about">
       <span>About Bash Restaurant:</span>
