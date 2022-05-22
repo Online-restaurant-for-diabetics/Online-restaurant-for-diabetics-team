@@ -7,7 +7,7 @@
       <a href="#" class="logo">BASH RESTURANT</a>
 
       <nav class="navbar">
-        
+      <a href="Home.php">Home</a>
          <a href="products.php">view products</a>
       </nav>
 
