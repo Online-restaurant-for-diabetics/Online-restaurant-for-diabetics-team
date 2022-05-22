@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+  scroll-behavior: smooth;
+}
+
+.heading-logo{
+	font-family: var(--logo-font);
+	font-size: 50px;
+	color:white;
+  }
+  #titleApp{
+	font-family: var(--logo-font);
+	font-size: 50px;
+	color:radial-gradient(rgba(150, 96, 207, 0.662), rgba(86, 138, 216, 0.738)); 
+  }
+a {
+  text-decoration: none;
+}
+button,
+input {
+  border: none;
+  outline: none;
+}
+
+/* gobal varible  */
+:root {
+  --bg-color: #0c0b09;
+  --light-bg-color: #1a1814;
+  --gold: #cda45e;
+  --white: #fff;
+  --playfair-disply-font: "Playfair Display", serif;
+  --logo-font: "Lobster", cursive;
+  --shadow: 0 0 13px var(--icon-bg);
+  --icon-bg: #28251f;
+}
+/* p{
+	font-weight:300;
+	color:radial-gradient(rgba(150, 96, 207, 0.662), rgba(86, 138, 216, 0.738)); 
+} */
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.about .image{
+    flex:1 1 40rem;
+    height:60rem;
+    background:url(../uploaded_img/Steamed\ Buddha’s\ delight.jpg) no-repeat;
+	border: 20px;
+	border-radius: 100px;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: screen;
+}
+
+.about .content{
+    flex:1 1 40rem;
+    padding:2rem;
+}
+
+.about .content h3{
+    font-size: 4rem; 
+}
+
+.about .content p{
+    font-size: 1.6rem;
+    padding:1rem 0;
+}
+/* ------------------------------------Section Home page ---------------------------*/
+
+   .Home-section {
+	font-family: var(--playfair-disply-font);
+	height: 100vh;
+	width: 100%;
+	background-image: url(../images/homePage.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	/* animation: zoonInOut 20s ease infinite; */
+  }
+  .Home-section .content {
+	font-size: 30;
+	text-align: center;
+	color: var(--gold);
+	text-transform: capitalize;
+	overflow: hidden;
+	font-family: var(--playfair-disply-font);
+	line-height: 1.7;
+	margin-top: 250px;
+  }
+  .Home-section::before{
+	content: '';
+	 left: 0;
+	 top: 0;
+	 position: absolute;
+	 background-color: #000000;
+	 opacity: 0.7;
+	 z-index: -1;
+	 height: 100vh;
+	 width: 100%;
+  }
+ 
+   .Home-section .content ,
+  .Home-section .content a{
+	color: var(--white);
+	font-weight: 900;
+	font-size: 40px;
+  }
+  
+
+.footer-distributed
+{
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 30px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right
+{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left
+{
+  width: 40%;
+}
+
+.footer-distributed h3
+{
+  color: #ffffff;
+  font: normal 36px 'Cookie';
+  margin: 0;
+}
+
+.footer-distributed h3 span
+{
+  color: #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links
+{
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a
+{
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name
+{
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* footer center */
+
+.footer-distributed .footer-center
+{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i
+{
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope
+{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p
+{
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span
+{
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a
+{
+  color: #5383d3;
+  text-decoration: none;
+}
+
+/* Footer right */
+
+.footer-distributed .footer-right
+{
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about
+{
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span
+{
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons
+{
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a
+{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.footer-icons
+{
+  color: grey;
+}
+
+div.right-checkout
+{
+  position: fixed;
+  top: 11%;
+  right: 10%;
+}
