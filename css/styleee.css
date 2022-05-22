@@ -60,7 +60,7 @@ input {
 .about .image{
     flex:1 1 40rem;
     height:60rem;
-    background:url(../uploaded_img/Steamed\ Buddha’s\ delight.jpg) no-repeat;
+    background:url(../images/Steamed\ Buddha’s\ delight.jpg) no-repeat;
 	border: 20px;
 	border-radius: 100px;
     background-size: cover;
